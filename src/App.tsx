@@ -102,7 +102,7 @@ function App() {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full blur-2xl opacity-30 animate-pulse"></div>
                 <img
-                  src="/470050592_1257218225546493_5097316974441673586_n.jpg"
+                  src="/Ian.jpg"
                   alt="Ian Michael Robles"
                   className="relative w-80 h-80 object-cover rounded-full border-4 border-slate-700 shadow-2xl"
                 />
@@ -124,20 +124,13 @@ function App() {
           </div>
           <div className="bg-slate-800/50 backdrop-blur rounded-2xl p-8 md:p-12 border border-slate-700/50 shadow-xl">
             <p className="text-slate-300 text-lg leading-relaxed mb-6">
-              I'm a passionate developer and designer dedicated to creating exceptional digital experiences.
-              With a keen eye for detail and a love for clean, efficient code, I bring ideas to life through
-              innovative solutions and thoughtful design.
-            </p>
-            <p className="text-slate-300 text-lg leading-relaxed mb-8">
-              My journey in technology is driven by curiosity and a commitment to continuous learning.
-              I believe in the power of technology to solve real-world problems and create meaningful
-              impact in people's lives.
+              I am a 3rd College BSIT Student of Western Institute of Technology.
+              My journey in technology is driven by curiosity and a commitment to continuous learning and create innovative ideas
+
+              
             </p>
             <div className="grid md:grid-cols-3 gap-6">
               {[
-                { label: 'Development', value: 'Full Stack' },
-                { label: 'Design', value: 'UI/UX' },
-                { label: 'Focus', value: 'Innovation' }
               ].map((item, index) => (
                 <div key={index} className="bg-slate-900/50 rounded-xl p-6 text-center border border-slate-700/30">
                   <p className="text-slate-400 text-sm mb-2">{item.label}</p>
@@ -160,37 +153,17 @@ function App() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                title: 'E-Commerce Platform',
-                description: 'Modern shopping experience with seamless checkout',
-                tech: ['React', 'Node.js', 'Stripe'],
-                image: '/470050592_1257218225546493_5097316974441673586_n.jpg'
+                title: 'Codigo',
+                description: 'Our 1st group Gamebase project for learning',
+                tech: ['React', 'JavaScript',],
+                image: '/codigo.png'
               },
               {
-                title: 'Portfolio Website',
-                description: 'Clean and professional portfolio design',
-                tech: ['React', 'Tailwind', 'Vite'],
-                image: '/470050592_1257218225546493_5097316974441673586_n.jpg'
+                title: 'Todos',
+                description: '',
+                tech: ['React',],
+                image: '/todos.png'
               },
-              {
-                title: 'Task Management App',
-                description: 'Organize and track tasks efficiently',
-                tech: ['TypeScript', 'Supabase', 'React']
-              },
-              {
-                title: 'Social Media Dashboard',
-                description: 'Analytics and insights at your fingertips',
-                tech: ['React', 'Chart.js', 'API']
-              },
-              {
-                title: 'Landing Page Design',
-                description: 'Conversion-focused landing pages',
-                tech: ['HTML', 'CSS', 'JavaScript']
-              },
-              {
-                title: 'Mobile App UI',
-                description: 'Beautiful and intuitive mobile interfaces',
-                tech: ['Figma', 'React Native', 'Design']
-              }
             ].map((project, index) => (
               <div
                 key={index}
@@ -281,16 +254,10 @@ function App() {
             <div className="mt-8 pt-8 border-t border-slate-700">
               <div className="flex justify-center gap-6">
                 <a
-                  href="#"
+                  href="https://github.com/Ian-rob"
                   className="w-12 h-12 bg-slate-900/50 border border-slate-700 rounded-lg flex items-center justify-center text-slate-400 hover:text-cyan-400 hover:border-cyan-500 transition-all"
                 >
                   <Github size={24} />
-                </a>
-                <a
-                  href="#"
-                  className="w-12 h-12 bg-slate-900/50 border border-slate-700 rounded-lg flex items-center justify-center text-slate-400 hover:text-cyan-400 hover:border-cyan-500 transition-all"
-                >
-                  <Linkedin size={24} />
                 </a>
                 <a
                   href="#"
