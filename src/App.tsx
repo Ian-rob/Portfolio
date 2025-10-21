@@ -168,7 +168,8 @@ function App() {
               {
                 title: 'Portfolio Website',
                 description: 'Clean and professional portfolio design',
-                tech: ['React', 'Tailwind', 'Vite']
+                tech: ['React', 'Tailwind', 'Vite'],
+                image: '/470050592_1257218225546493_5097316974441673586_n.jpg'
               },
               {
                 title: 'Task Management App',
