@@ -162,7 +162,8 @@ function App() {
               {
                 title: 'E-Commerce Platform',
                 description: 'Modern shopping experience with seamless checkout',
-                tech: ['React', 'Node.js', 'Stripe']
+                tech: ['React', 'Node.js', 'Stripe'],
+                image: '/470050592_1257218225546493_5097316974441673586_n.jpg'
               },
               {
                 title: 'Portfolio Website',
@@ -194,9 +195,19 @@ function App() {
                 key={index}
                 className="bg-slate-800/50 backdrop-blur rounded-xl p-6 border border-slate-700/50 hover:border-cyan-500/50 transition-all hover:transform hover:scale-105 cursor-pointer group"
               >
-                <div className="w-full h-40 bg-gradient-to-br from-slate-700 to-slate-800 rounded-lg mb-4 flex items-center justify-center group-hover:from-cyan-600 group-hover:to-blue-600 transition-all">
-                  <Briefcase size={48} className="text-slate-600 group-hover:text-white transition-colors" />
-                </div>
+                {project.image ? (
+                  <div className="w-full h-40 rounded-lg mb-4 overflow-hidden">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                    />
+                  </div>
+                ) : (
+                  <div className="w-full h-40 bg-gradient-to-br from-slate-700 to-slate-800 rounded-lg mb-4 flex items-center justify-center group-hover:from-cyan-600 group-hover:to-blue-600 transition-all">
+                    <Briefcase size={48} className="text-slate-600 group-hover:text-white transition-colors" />
+                  </div>
+                )}
                 <h3 className="text-xl font-semibold text-white mb-2">{project.title}</h3>
                 <p className="text-slate-400 mb-4">{project.description}</p>
                 <div className="flex flex-wrap gap-2">
